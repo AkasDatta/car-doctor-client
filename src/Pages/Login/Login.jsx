@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import img from '../../assets/images/login/login.svg'
 const Login = () => {
     const handleLogin = event =>{
@@ -15,23 +16,24 @@ const Login = () => {
                         <form onSubmit={handleLogin}>
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">Email</span>
+                                    <span className="label-text text-black">Email</span>
                                 </label>
-                                <input type="text" placeholder="email" className="input input-bordered bg-gray-200 " />
+                                <input type="text" placeholder="email" name="name" className="input input-bordered bg-gray-200 text-black " />
                             </div>
                             <div className="form-control">
                                 <label className="label">
-                                    <span className="label-text">Password</span>
+                                    <span className="label-text text-black">Password</span>
                                 </label>
-                                <input type="text" placeholder="password" className="input input-bordered bg-gray-200" />
+                                <input type="text" placeholder="password" name='password' className="input input-bordered text-black bg-gray-200" />
                                 <label className="label">
-                                    <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                                    <a href="#" className="label-text-alt link link-hover text-black">Forgot password?</a>
                                 </label>
                             </div>
                             <div className="form-control mt-6">
                                 <input className="btn bg-orange-600 hover:bg-orange-800" type="submit" value="Login" />
                             </div>
                         </form>
+                        <p className='text-black my-4 text-center'>New to Car Doctors <Link className='text-orange-600 font-bold' to="/signup"> Sign Up</Link></p>
                     </div>
                 </div>
             </div>
