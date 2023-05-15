@@ -18,7 +18,7 @@ const Login = () => {
                                 <label className="label">
                                     <span className="label-text text-black">Email</span>
                                 </label>
-                                <input type="text" placeholder="email" name="name" className="input input-bordered bg-gray-200 text-black " />
+                                <input type="text" placeholder="email" name="email" className="input input-bordered bg-gray-200 text-black " />
                             </div>
                             <div className="form-control">
                                 <label className="label">
@@ -30,7 +30,7 @@ const Login = () => {
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <input className="btn bg-orange-600 hover:bg-orange-800" type="submit" value="Login" />
+                                <input className="btn bg-orange-600 hover:bg-orange-800 text-white" type="submit" value="Login" />
                             </div>
                         </form>
                         <p className='text-black my-4 text-center'>New to Car Doctors <Link className='text-orange-600 font-bold' to="/signup"> Sign Up</Link></p>
