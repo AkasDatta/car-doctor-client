@@ -17,7 +17,7 @@ const Banner = () => {
                             There are many variations of passages of  available, but the majority have suffered alteration in some form
                         </p>
                         <div>
-                            <button className="btn btn-error mr-5">Discover More</button>
+                            <button className="btn bg-orange-600 hover:bg-orange-800 mr-5">Discover More</button>
                             <button className="btn btn-outline">Latest Project</button>
                         </div>
                     </div>
@@ -38,7 +38,7 @@ const Banner = () => {
                             There are many variations of passages of  available, but the majority have suffered alteration in some form
                         </p>
                         <div>
-                            <button className="btn btn-error mr-5">Discover More</button>
+                            <button className="btn bg-orange-600 hover:bg-orange-800 mr-5">Discover More</button>
                             <button className="btn btn-outline">Latest Project</button>
                         </div>
                     </div>
@@ -59,7 +59,7 @@ const Banner = () => {
                             There are many variations of passages of  available, but the majority have suffered alteration in some form
                         </p>
                         <div>
-                            <button className="btn btn-error mr-5">Discover More</button>
+                            <button className="btn bg-orange-600 hover:bg-orange-800 mr-5">Discover More</button>
                             <button className="btn btn-outline">Latest Project</button>
                         </div>
                     </div>
@@ -80,7 +80,7 @@ const Banner = () => {
                             There are many variations of passages of  available, but the majority have suffered alteration in some form
                         </p>
                         <div>
-                            <button className="btn btn-error mr-5">Discover More</button>
+                            <button className="btn bg-orange-600 hover:bg-orange-800 mr-5">Discover More</button>
                             <button className="btn btn-outline">Latest Project</button>
                         </div>
                     </div>
