@@ -1,10 +1,14 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import img from '../../assets/images/login/login.svg'
 import { useContext } from 'react';
 import { AuthContext } from '../../providers/Authprovider';
 const Login = () => {
 
     const {signIn} = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const from = location.state?.from?.pathname || '/';
 
     const handleLogin = event =>{
         event.preventDefault();
@@ -15,7 +19,8 @@ const Login = () => {
         signIn(email, password)
         .then(result => {
             const user = result.user;
-            console.log(user)
+            console.log(user);
+            navigate(from, {replace: true})
         })
         .catch(error => console.log(error))
     }
@@ -40,7 +45,7 @@ const Login = () => {
                                 <label className="label">
                                     <span className="label-text text-black">Password</span>
                                 </label>
-                                <input type="text" placeholder="password" name='password' className="input input-bordered text-black bg-gray-200" />
+                                <input type="password" placeholder="password" name='password' className="input input-bordered text-black bg-gray-200" />
                                 <label className="label">
                                     <a href="#" className="label-text-alt link link-hover text-black">Forgot password?</a>
                                 </label>
